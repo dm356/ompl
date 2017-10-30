@@ -191,7 +191,7 @@ if (OMPL_VERSIONED_INSTALL)
 endif()
 include(CPackSettings)
 
-option(OMPL_REGISTRATION "Enable one-time registration of OMPL" ON)
+option(OMPL_REGISTRATION "Enable one-time registration of OMPL" OFF)
 if (OMPL_REGISTRATION)
     find_file(OMPL_REGISTERED ".registered" PATHS "${CMAKE_CURRENT_SOURCE_DIR}" NO_DEFAULT_PATH)
     if (NOT OMPL_REGISTERED)
